@@ -19,14 +19,14 @@ Foi decidido utilizar uma aplicação de uma api devido aos requisitos técnicos
   A solução está conteinerizada e na pasta raiz.
   Foram adicionados testes unitários das camadas de Repositório, Service e UseCase.
   Foram atendidos os requisitos a seguir:
-  API em C# /ASP.NET Core 8+.
-  Banco de dados: relacional (PostgreSQL).
-  Documentação de endpoints com Swagger.
-  Testes automatizados para regras de negócio.
-  Projeto containerizado com Docker + docker-compose.
-  Logs estruturados (mínimo: request/response + erros) com Correlation ID.
-  Autenticação via JWT.
-  Uso de DTOs e separação clara de camadas (ex.: Controllers, Services, Repositórios).
+  <li>API em C# /ASP.NET Core 8+.</li>
+  <li>Banco de dados: relacional (PostgreSQL).</li>
+  <li>Documentação de endpoints com Swagger.</li>
+  <li>Testes automatizados para regras de negócio.</li>
+  <li>Projeto containerizado com Docker + docker-compose.</li>
+  <li>Logs estruturados (mínimo: request/response + erros) com Correlation ID.</li>
+  <li>Autenticação via JWT.</li>
+  <li>Uso de DTOs e separação clara de camadas (ex.: Controllers, Services, Repositórios).</li>
 </p>
 
 
@@ -35,8 +35,11 @@ Foi decidido utilizar uma aplicação de uma api devido aos requisitos técnicos
 <ul style="list-style: none;">  
 	<li></li>
 		<ul style="list-style: none;"> 
-			<li>Dentro do projeto Intituicao.Financeira utilizar o console para executar o comando Update-Database Init. Será espelhado a modelagem no dados no banco.</li>
-			<li>Os scripts de inserção de dados estão localizados em: Intituicao.Financeira.Application.Shared.Repository.Scripts. Caso seja necessário, executá-los na ordem.</li>
+           A rota de Criação de contrato está utilizando método de autorização JWT.
+
+           
+			Dentro do projeto Intituicao.Financeira utilizar o console para executar o comando Update-Database Init. Será espelhado a modelagem no dados no banco.
+			Os scripts de inserção de dados estão localizados em: Intituicao.Financeira.Application.Shared.Repository.Scripts. Caso seja necessário, executá-los na ordem.
 		</ul>    
     <li></li>
 		<ul style="list-style: none;">
@@ -46,11 +49,7 @@ Foi decidido utilizar uma aplicação de uma api devido aos requisitos técnicos
 			<li>InsertContrato.sql</li>	
 			<li>InsertPagamentos.sql</li>	
 		</ul>	
-        <li></li>
-    <ul style="list-style: none;"> 
-			<li>A rota de Criação de contrato está utilizando método de autorização JWT.</li>
-		</ul>    
-    <li></li>			
+        <li></li>   		
 </ul>
 
 <!---->
