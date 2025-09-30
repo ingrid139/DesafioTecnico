@@ -36,8 +36,6 @@ Foi decidido utilizar uma aplicação de uma api devido aos requisitos técnicos
 	<li></li>
 		<ul style="list-style: none;"> 
            A rota de Criação de contrato está utilizando método de autorização JWT.
-
-           
 			Dentro do projeto Intituicao.Financeira utilizar o console para executar o comando Update-Database Init. Será espelhado a modelagem no dados no banco.
 			Os scripts de inserção de dados estão localizados em: Intituicao.Financeira.Application.Shared.Repository.Scripts. Caso seja necessário, executá-los na ordem.
 		</ul>    
