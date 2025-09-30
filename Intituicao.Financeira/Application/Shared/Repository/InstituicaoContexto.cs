@@ -19,7 +19,7 @@ namespace Intituicao.Financeira.Application.Shared.Repository
         {
             if (!optionsBuilder.IsConfigured)
                 optionsBuilder.UseNpgsql
-                    ("Host=localhost;Port=5432;Pooling=true;Database=CatalogoDB;User Id=postgres;Password=2457;");
+                    ("Host=localhost;Port=5437;Pooling=true;Database=CatalogoDB;User Id=postgres;Password=2457;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

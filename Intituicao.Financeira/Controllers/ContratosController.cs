@@ -31,7 +31,6 @@ namespace Intituicao.Financeira.Controllers
         /// <param name="request">Request for getting a contract</param>
         /// <param name="cancellationToken"></param>
         /// <returns>The contract.</returns>
-        [Authorize]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
@@ -58,6 +57,7 @@ namespace Intituicao.Financeira.Controllers
         /// <param name="cancellationToken"></param>
         /// <returns>The contract.</returns>
         [HttpPost]
+        [Authorize]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
