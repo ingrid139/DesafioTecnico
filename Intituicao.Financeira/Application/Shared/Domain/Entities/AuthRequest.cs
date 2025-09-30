@@ -6,6 +6,6 @@ namespace Intituicao.Financeira.Application.Shared.Domain.Entities
     public class AuthRequest
     {
         public string ClientId { get; set; }
-        public string ClientScret { get; set; }
+        public string ClientSecret { get; set; }
     }
 }

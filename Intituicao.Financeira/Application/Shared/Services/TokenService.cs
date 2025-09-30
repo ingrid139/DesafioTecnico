@@ -28,7 +28,7 @@ namespace Intituicao.Financeira.Application.Shared.Services
 
         public static bool Validate(AuthRequest authRequest)
         {
-            if (_client.Equals(authRequest.ClientId) && _secret.Equals(authRequest.ClientScret))
+            if (_client.Equals(authRequest.ClientId) && _secret.Equals(authRequest.ClientSecret))
                 return true;
             return false;
         }
